@@ -21,6 +21,7 @@ The application is divided into three main exercises:
    - All Docker images are published to Docker Hub for deployment.
 
 ## Project Structure
+```
 Library-Management-Microservices/
 ├── exercise_one/
 │   ├── BookService/
@@ -70,7 +71,7 @@ Library-Management-Microservices/
       ├── rabbitmq-service.yaml
       ├── user_service-deployment.yaml
       └── user_service-service.yaml
-
+```
 
 ## Services Overview
 
