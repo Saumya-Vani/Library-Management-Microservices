@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env
+data:
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "password"
+  POSTGRES_DB: "library_db"
+  POSTGRES_HOST: "db"  # This should match the database service name
+  POSTGRES_PORT: "5432"
+  RABBITMQ_DEFAULT_USER: "guest"
+  RABBITMQ_DEFAULT_PASS: "guest"
+  RABBITMQ_HOST: "rabbitmq"
+  RABBITMQ_QUEUE: "borrow_queue"
+  USER_SERVICE_URL: "http://user-service:5002/users/"
+  BOOK_SERVICE_URL: "http://book-service:5006/books/"
